@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0BEB6F1771A16F001A7184 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0BEB6E1771A16F001A7184 /* QuartzCore.framework */; };
+		5C10A406176F524A00E10DDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10A405176F524A00E10DDD /* UIKit.framework */; };
+		5C10A408176F524A00E10DDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10A407176F524A00E10DDD /* Foundation.framework */; };
+		5C10A40A176F524A00E10DDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10A409176F524A00E10DDD /* CoreGraphics.framework */; };
+		5C10A410176F524B00E10DDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A40E176F524B00E10DDD /* InfoPlist.strings */; };
+		5C10A412176F524B00E10DDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C10A411176F524B00E10DDD /* main.m */; };
+		5C10A416176F524B00E10DDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C10A415176F524B00E10DDD /* AppDelegate.m */; };
+		5C10A418176F524B00E10DDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A417176F524B00E10DDD /* Default.png */; };
+		5C10A41A176F524B00E10DDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A419176F524B00E10DDD /* Default@2x.png */; };
+		5C10A41C176F524B00E10DDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A41B176F524B00E10DDD /* Default-568h@2x.png */; };
+		5C10A41F176F524B00E10DDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C10A41E176F524B00E10DDD /* ViewController.m */; };
+		5C10A422176F524B00E10DDD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A420176F524B00E10DDD /* ViewController.xib */; };
+		5C10A42A176F545A00E10DDD /* FootballVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C10A429176F545A00E10DDD /* FootballVC.m */; };
+		5C10A42C176F546F00E10DDD /* FootballView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A42B176F546F00E10DDD /* FootballView.xib */; };
+		5C10A42F176F550100E10DDD /* arrow_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A42E176F550100E10DDD /* arrow_back.png */; };
+		5C10A431176F550900E10DDD /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C10A430176F550900E10DDD /* topbar.png */; };
+		5CFC39B41770691500A9F450 /* NumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC39B31770691500A9F450 /* NumberView.m */; };
+		5CFC39B717706ABC00A9F450 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CFC39B617706ABC00A9F450 /* circle.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C0BEB6E1771A16F001A7184 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5C10A402176F524A00E10DDD /* DeutschMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeutschMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C10A405176F524A00E10DDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C10A407176F524A00E10DDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C10A409176F524A00E10DDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C10A40D176F524B00E10DDD /* DeutschMath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeutschMath-Info.plist"; sourceTree = "<group>"; };
+		5C10A40F176F524B00E10DDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C10A411176F524B00E10DDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C10A413176F524B00E10DDD /* DeutschMath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeutschMath-Prefix.pch"; sourceTree = "<group>"; };
+		5C10A414176F524B00E10DDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C10A415176F524B00E10DDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C10A417176F524B00E10DDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5C10A419176F524B00E10DDD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5C10A41B176F524B00E10DDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5C10A41D176F524B00E10DDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C10A41E176F524B00E10DDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C10A421176F524B00E10DDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		5C10A428176F545A00E10DDD /* FootballVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootballVC.h; sourceTree = "<group>"; };
+		5C10A429176F545A00E10DDD /* FootballVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootballVC.m; sourceTree = "<group>"; };
+		5C10A42B176F546F00E10DDD /* FootballView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FootballView.xib; sourceTree = "<group>"; };
+		5C10A42E176F550100E10DDD /* arrow_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_back.png; sourceTree = "<group>"; };
+		5C10A430176F550900E10DDD /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
+		5CFC39B21770691500A9F450 /* NumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberView.h; sourceTree = "<group>"; };
+		5CFC39B31770691500A9F450 /* NumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberView.m; sourceTree = "<group>"; };
+		5CFC39B51770698E00A9F450 /* NumberViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberViewDelegate.h; sourceTree = "<group>"; };
+		5CFC39B617706ABC00A9F450 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C10A3FF176F524A00E10DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0BEB6F1771A16F001A7184 /* QuartzCore.framework in Frameworks */,
+				5C10A406176F524A00E10DDD /* UIKit.framework in Frameworks */,
+				5C10A408176F524A00E10DDD /* Foundation.framework in Frameworks */,
+				5C10A40A176F524A00E10DDD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C10A3F9176F524A00E10DDD = {
+			isa = PBXGroup;
+			children = (
+				5C10A40B176F524B00E10DDD /* DeutschMath */,
+				5C10A404176F524A00E10DDD /* Frameworks */,
+				5C10A403176F524A00E10DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C10A403176F524A00E10DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C10A402176F524A00E10DDD /* DeutschMath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C10A404176F524A00E10DDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C0BEB6E1771A16F001A7184 /* QuartzCore.framework */,
+				5C10A405176F524A00E10DDD /* UIKit.framework */,
+				5C10A407176F524A00E10DDD /* Foundation.framework */,
+				5C10A409176F524A00E10DDD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C10A40B176F524B00E10DDD /* DeutschMath */ = {
+			isa = PBXGroup;
+			children = (
+				5C10A414176F524B00E10DDD /* AppDelegate.h */,
+				5C10A415176F524B00E10DDD /* AppDelegate.m */,
+				5C10A41D176F524B00E10DDD /* ViewController.h */,
+				5C10A41E176F524B00E10DDD /* ViewController.m */,
+				5C10A420176F524B00E10DDD /* ViewController.xib */,
+				5C10A40C176F524B00E10DDD /* Supporting Files */,
+				5C10A428176F545A00E10DDD /* FootballVC.h */,
+				5C10A429176F545A00E10DDD /* FootballVC.m */,
+				5C10A42B176F546F00E10DDD /* FootballView.xib */,
+				5C10A42D176F54A900E10DDD /* images */,
+				5CFC39B21770691500A9F450 /* NumberView.h */,
+				5CFC39B31770691500A9F450 /* NumberView.m */,
+				5CFC39B51770698E00A9F450 /* NumberViewDelegate.h */,
+			);
+			path = DeutschMath;
+			sourceTree = "<group>";
+		};
+		5C10A40C176F524B00E10DDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C10A40D176F524B00E10DDD /* DeutschMath-Info.plist */,
+				5C10A40E176F524B00E10DDD /* InfoPlist.strings */,
+				5C10A411176F524B00E10DDD /* main.m */,
+				5C10A413176F524B00E10DDD /* DeutschMath-Prefix.pch */,
+				5C10A417176F524B00E10DDD /* Default.png */,
+				5C10A419176F524B00E10DDD /* Default@2x.png */,
+				5C10A41B176F524B00E10DDD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C10A42D176F54A900E10DDD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5CFC39B617706ABC00A9F450 /* circle.png */,
+				5C10A42E176F550100E10DDD /* arrow_back.png */,
+				5C10A430176F550900E10DDD /* topbar.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C10A401176F524A00E10DDD /* DeutschMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C10A425176F524B00E10DDD /* Build configuration list for PBXNativeTarget "DeutschMath" */;
+			buildPhases = (
+				5C10A3FE176F524A00E10DDD /* Sources */,
+				5C10A3FF176F524A00E10DDD /* Frameworks */,
+				5C10A400176F524A00E10DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeutschMath;
+			productName = DeutschMath;
+			productReference = 5C10A402176F524A00E10DDD /* DeutschMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C10A3FA176F524A00E10DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = appbyran;
+			};
+			buildConfigurationList = 5C10A3FD176F524A00E10DDD /* Build configuration list for PBXProject "DeutschMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C10A3F9176F524A00E10DDD;
+			productRefGroup = 5C10A403176F524A00E10DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C10A401176F524A00E10DDD /* DeutschMath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C10A400176F524A00E10DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C10A410176F524B00E10DDD /* InfoPlist.strings in Resources */,
+				5C10A418176F524B00E10DDD /* Default.png in Resources */,
+				5C10A41A176F524B00E10DDD /* Default@2x.png in Resources */,
+				5C10A41C176F524B00E10DDD /* Default-568h@2x.png in Resources */,
+				5C10A422176F524B00E10DDD /* ViewController.xib in Resources */,
+				5C10A42C176F546F00E10DDD /* FootballView.xib in Resources */,
+				5C10A42F176F550100E10DDD /* arrow_back.png in Resources */,
+				5C10A431176F550900E10DDD /* topbar.png in Resources */,
+				5CFC39B717706ABC00A9F450 /* circle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C10A3FE176F524A00E10DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C10A412176F524B00E10DDD /* main.m in Sources */,
+				5C10A416176F524B00E10DDD /* AppDelegate.m in Sources */,
+				5C10A41F176F524B00E10DDD /* ViewController.m in Sources */,
+				5C10A42A176F545A00E10DDD /* FootballVC.m in Sources */,
+				5CFC39B41770691500A9F450 /* NumberView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C10A40E176F524B00E10DDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C10A40F176F524B00E10DDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C10A420176F524B00E10DDD /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C10A421176F524B00E10DDD /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C10A423176F524B00E10DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C10A424176F524B00E10DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C10A426176F524B00E10DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeutschMath/DeutschMath-Prefix.pch";
+				INFOPLIST_FILE = "DeutschMath/DeutschMath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C10A427176F524B00E10DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeutschMath/DeutschMath-Prefix.pch";
+				INFOPLIST_FILE = "DeutschMath/DeutschMath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C10A3FD176F524A00E10DDD /* Build configuration list for PBXProject "DeutschMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C10A423176F524B00E10DDD /* Debug */,
+				5C10A424176F524B00E10DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C10A425176F524B00E10DDD /* Build configuration list for PBXNativeTarget "DeutschMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C10A426176F524B00E10DDD /* Debug */,
+				5C10A427176F524B00E10DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C10A3FA176F524A00E10DDD /* Project object */;
+}
