@@ -72,6 +72,10 @@ CGSize const numberFrameSize = {40,40};
     [self reinitializeNumberViews];
     
     numCorrect = 0;
+    if ( clockLink ) {
+        [clockLink invalidate];
+        clockLink = nil;
+    }
     clockLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(timeIncrement)];
     [clockLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     startDate = [NSDate date];
@@ -224,6 +228,9 @@ CGSize const numberFrameSize = {40,40};
                 break;
             }
         }
+        
+        // make sure the two partials are not the same (indexOfObject: searches using isEqual:)
+        validPartial &= ( partial1 != partial2 );
     }
     
     if ( !validPartial ) {
@@ -320,9 +327,9 @@ CGSize const numberFrameSize = {40,40};
         clockLink = nil;
     }
     if ( sender == _resetButton ) {
-        [self reinitialize];
         [clockLink invalidate];
         clockLink = nil;
+        [self reinitialize];
     }
 }
                  

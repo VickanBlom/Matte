@@ -8,6 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		5C0BEB6F1771A16F001A7184 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0BEB6E1771A16F001A7184 /* QuartzCore.framework */; };
+		5C0BEB721771C575001A7184 /* MachineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BEB711771C575001A7184 /* MachineVC.m */; };
+		5C0BEB741771C591001A7184 /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB731771C591001A7184 /* MachineView.xib */; };
+		5C0BEB761771C5BB001A7184 /* Mattespel_TheMachine_HELA.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB751771C5BB001A7184 /* Mattespel_TheMachine_HELA.png */; };
+		5C0BEB781771CED0001A7184 /* Close_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB771771CED0001A7184 /* Close_button.png */; };
+		5C0BEB921771D18C001A7184 /* keyboard_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB7A1771D18B001A7184 /* keyboard_arrow.png */; };
+		5C0BEB931771D18C001A7184 /* keyboard_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB7B1771D18B001A7184 /* keyboard_arrow@2x.png */; };
+		5C0BEB941771D18C001A7184 /* keyboard_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB7C1771D18B001A7184 /* keyboard_dot.png */; };
+		5C0BEB951771D18C001A7184 /* keyboard_dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB7D1771D18B001A7184 /* keyboard_dot@2x.png */; };
+		5C0BEB961771D18C001A7184 /* keyboard0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB7E1771D18B001A7184 /* keyboard0.png */; };
+		5C0BEB971771D18C001A7184 /* keyboard0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB7F1771D18B001A7184 /* keyboard0@2x.png */; };
+		5C0BEB981771D18C001A7184 /* keyboard1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB801771D18B001A7184 /* keyboard1.png */; };
+		5C0BEB991771D18C001A7184 /* keyboard1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB811771D18B001A7184 /* keyboard1@2x.png */; };
+		5C0BEB9A1771D18C001A7184 /* keyboard2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB821771D18B001A7184 /* keyboard2.png */; };
+		5C0BEB9B1771D18C001A7184 /* keyboard2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB831771D18B001A7184 /* keyboard2@2x.png */; };
+		5C0BEB9C1771D18C001A7184 /* keyboard3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB841771D18B001A7184 /* keyboard3.png */; };
+		5C0BEB9D1771D18C001A7184 /* keyboard3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB851771D18B001A7184 /* keyboard3@2x.png */; };
+		5C0BEB9E1771D18C001A7184 /* keyboard4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB861771D18B001A7184 /* keyboard4.png */; };
+		5C0BEB9F1771D18C001A7184 /* keyboard4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB871771D18B001A7184 /* keyboard4@2x.png */; };
+		5C0BEBA01771D18C001A7184 /* keyboard5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB881771D18B001A7184 /* keyboard5.png */; };
+		5C0BEBA11771D18C001A7184 /* keyboard5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB891771D18B001A7184 /* keyboard5@2x.png */; };
+		5C0BEBA21771D18C001A7184 /* keyboard6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB8A1771D18B001A7184 /* keyboard6.png */; };
+		5C0BEBA31771D18C001A7184 /* keyboard6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB8B1771D18B001A7184 /* keyboard6@2x.png */; };
+		5C0BEBA41771D18C001A7184 /* keyboard7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB8C1771D18B001A7184 /* keyboard7.png */; };
+		5C0BEBA51771D18C001A7184 /* keyboard7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB8D1771D18B001A7184 /* keyboard7@2x.png */; };
+		5C0BEBA61771D18C001A7184 /* keyboard8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB8E1771D18B001A7184 /* keyboard8.png */; };
+		5C0BEBA71771D18C001A7184 /* keyboard8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB8F1771D18B001A7184 /* keyboard8@2x.png */; };
+		5C0BEBA81771D18C001A7184 /* keyboard9.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB901771D18B001A7184 /* keyboard9.png */; };
+		5C0BEBA91771D18C001A7184 /* keyboard9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEB911771D18B001A7184 /* keyboard9@2x.png */; };
+		5C0BEBAC1771D196001A7184 /* keyboard_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEBAA1771D196001A7184 /* keyboard_background_iPad.png */; };
+		5C0BEBAD1771D196001A7184 /* keyboard_background_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEBAB1771D196001A7184 /* keyboard_background_iPad@2x.png */; };
+		5C0BEBAF1771D290001A7184 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEBAE1771D290001A7184 /* transparent.png */; };
+		5C0BEBB11771D2E7001A7184 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BEBB01771D2E7001A7184 /* red.png */; };
 		5C10A406176F524A00E10DDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10A405176F524A00E10DDD /* UIKit.framework */; };
 		5C10A408176F524A00E10DDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10A407176F524A00E10DDD /* Foundation.framework */; };
 		5C10A40A176F524A00E10DDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10A409176F524A00E10DDD /* CoreGraphics.framework */; };
@@ -29,6 +61,39 @@
 
 /* Begin PBXFileReference section */
 		5C0BEB6E1771A16F001A7184 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5C0BEB701771C574001A7184 /* MachineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineVC.h; sourceTree = "<group>"; };
+		5C0BEB711771C575001A7184 /* MachineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineVC.m; sourceTree = "<group>"; };
+		5C0BEB731771C591001A7184 /* MachineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineView.xib; sourceTree = "<group>"; };
+		5C0BEB751771C5BB001A7184 /* Mattespel_TheMachine_HELA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mattespel_TheMachine_HELA.png; sourceTree = "<group>"; };
+		5C0BEB771771CED0001A7184 /* Close_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_button.png; sourceTree = "<group>"; };
+		5C0BEB7A1771D18B001A7184 /* keyboard_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_arrow.png; sourceTree = "<group>"; };
+		5C0BEB7B1771D18B001A7184 /* keyboard_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_arrow@2x.png"; sourceTree = "<group>"; };
+		5C0BEB7C1771D18B001A7184 /* keyboard_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_dot.png; sourceTree = "<group>"; };
+		5C0BEB7D1771D18B001A7184 /* keyboard_dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_dot@2x.png"; sourceTree = "<group>"; };
+		5C0BEB7E1771D18B001A7184 /* keyboard0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard0.png; sourceTree = "<group>"; };
+		5C0BEB7F1771D18B001A7184 /* keyboard0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard0@2x.png"; sourceTree = "<group>"; };
+		5C0BEB801771D18B001A7184 /* keyboard1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard1.png; sourceTree = "<group>"; };
+		5C0BEB811771D18B001A7184 /* keyboard1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard1@2x.png"; sourceTree = "<group>"; };
+		5C0BEB821771D18B001A7184 /* keyboard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard2.png; sourceTree = "<group>"; };
+		5C0BEB831771D18B001A7184 /* keyboard2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard2@2x.png"; sourceTree = "<group>"; };
+		5C0BEB841771D18B001A7184 /* keyboard3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard3.png; sourceTree = "<group>"; };
+		5C0BEB851771D18B001A7184 /* keyboard3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard3@2x.png"; sourceTree = "<group>"; };
+		5C0BEB861771D18B001A7184 /* keyboard4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard4.png; sourceTree = "<group>"; };
+		5C0BEB871771D18B001A7184 /* keyboard4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard4@2x.png"; sourceTree = "<group>"; };
+		5C0BEB881771D18B001A7184 /* keyboard5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard5.png; sourceTree = "<group>"; };
+		5C0BEB891771D18B001A7184 /* keyboard5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard5@2x.png"; sourceTree = "<group>"; };
+		5C0BEB8A1771D18B001A7184 /* keyboard6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard6.png; sourceTree = "<group>"; };
+		5C0BEB8B1771D18B001A7184 /* keyboard6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard6@2x.png"; sourceTree = "<group>"; };
+		5C0BEB8C1771D18B001A7184 /* keyboard7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard7.png; sourceTree = "<group>"; };
+		5C0BEB8D1771D18B001A7184 /* keyboard7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard7@2x.png"; sourceTree = "<group>"; };
+		5C0BEB8E1771D18B001A7184 /* keyboard8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard8.png; sourceTree = "<group>"; };
+		5C0BEB8F1771D18B001A7184 /* keyboard8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard8@2x.png"; sourceTree = "<group>"; };
+		5C0BEB901771D18B001A7184 /* keyboard9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard9.png; sourceTree = "<group>"; };
+		5C0BEB911771D18B001A7184 /* keyboard9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard9@2x.png"; sourceTree = "<group>"; };
+		5C0BEBAA1771D196001A7184 /* keyboard_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_background_iPad.png; sourceTree = "<group>"; };
+		5C0BEBAB1771D196001A7184 /* keyboard_background_iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_background_iPad@2x.png"; sourceTree = "<group>"; };
+		5C0BEBAE1771D290001A7184 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
+		5C0BEBB01771D2E7001A7184 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		5C10A402176F524A00E10DDD /* DeutschMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeutschMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C10A405176F524A00E10DDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C10A407176F524A00E10DDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +136,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C0BEB791771D174001A7184 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C0BEBAA1771D196001A7184 /* keyboard_background_iPad.png */,
+				5C0BEBAB1771D196001A7184 /* keyboard_background_iPad@2x.png */,
+				5C0BEB7A1771D18B001A7184 /* keyboard_arrow.png */,
+				5C0BEB7B1771D18B001A7184 /* keyboard_arrow@2x.png */,
+				5C0BEB7C1771D18B001A7184 /* keyboard_dot.png */,
+				5C0BEB7D1771D18B001A7184 /* keyboard_dot@2x.png */,
+				5C0BEB7E1771D18B001A7184 /* keyboard0.png */,
+				5C0BEB7F1771D18B001A7184 /* keyboard0@2x.png */,
+				5C0BEB801771D18B001A7184 /* keyboard1.png */,
+				5C0BEB811771D18B001A7184 /* keyboard1@2x.png */,
+				5C0BEB821771D18B001A7184 /* keyboard2.png */,
+				5C0BEB831771D18B001A7184 /* keyboard2@2x.png */,
+				5C0BEB841771D18B001A7184 /* keyboard3.png */,
+				5C0BEB851771D18B001A7184 /* keyboard3@2x.png */,
+				5C0BEB861771D18B001A7184 /* keyboard4.png */,
+				5C0BEB871771D18B001A7184 /* keyboard4@2x.png */,
+				5C0BEB881771D18B001A7184 /* keyboard5.png */,
+				5C0BEB891771D18B001A7184 /* keyboard5@2x.png */,
+				5C0BEB8A1771D18B001A7184 /* keyboard6.png */,
+				5C0BEB8B1771D18B001A7184 /* keyboard6@2x.png */,
+				5C0BEB8C1771D18B001A7184 /* keyboard7.png */,
+				5C0BEB8D1771D18B001A7184 /* keyboard7@2x.png */,
+				5C0BEB8E1771D18B001A7184 /* keyboard8.png */,
+				5C0BEB8F1771D18B001A7184 /* keyboard8@2x.png */,
+				5C0BEB901771D18B001A7184 /* keyboard9.png */,
+				5C0BEB911771D18B001A7184 /* keyboard9@2x.png */,
+			);
+			name = keyboard;
+			sourceTree = "<group>";
+		};
 		5C10A3F9176F524A00E10DDD = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +213,9 @@
 				5CFC39B21770691500A9F450 /* NumberView.h */,
 				5CFC39B31770691500A9F450 /* NumberView.m */,
 				5CFC39B51770698E00A9F450 /* NumberViewDelegate.h */,
+				5C0BEB701771C574001A7184 /* MachineVC.h */,
+				5C0BEB711771C575001A7184 /* MachineVC.m */,
+				5C0BEB731771C591001A7184 /* MachineView.xib */,
 			);
 			path = DeutschMath;
 			sourceTree = "<group>";
@@ -136,6 +237,11 @@
 		5C10A42D176F54A900E10DDD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5C0BEB791771D174001A7184 /* keyboard */,
+				5C0BEB771771CED0001A7184 /* Close_button.png */,
+				5C0BEBAE1771D290001A7184 /* transparent.png */,
+				5C0BEBB01771D2E7001A7184 /* red.png */,
+				5C0BEB751771C5BB001A7184 /* Mattespel_TheMachine_HELA.png */,
 				5CFC39B617706ABC00A9F450 /* circle.png */,
 				5C10A42E176F550100E10DDD /* arrow_back.png */,
 				5C10A430176F550900E10DDD /* topbar.png */,
@@ -203,6 +309,37 @@
 				5C10A42F176F550100E10DDD /* arrow_back.png in Resources */,
 				5C10A431176F550900E10DDD /* topbar.png in Resources */,
 				5CFC39B717706ABC00A9F450 /* circle.png in Resources */,
+				5C0BEB741771C591001A7184 /* MachineView.xib in Resources */,
+				5C0BEB761771C5BB001A7184 /* Mattespel_TheMachine_HELA.png in Resources */,
+				5C0BEB781771CED0001A7184 /* Close_button.png in Resources */,
+				5C0BEB921771D18C001A7184 /* keyboard_arrow.png in Resources */,
+				5C0BEB931771D18C001A7184 /* keyboard_arrow@2x.png in Resources */,
+				5C0BEB941771D18C001A7184 /* keyboard_dot.png in Resources */,
+				5C0BEB951771D18C001A7184 /* keyboard_dot@2x.png in Resources */,
+				5C0BEB961771D18C001A7184 /* keyboard0.png in Resources */,
+				5C0BEB971771D18C001A7184 /* keyboard0@2x.png in Resources */,
+				5C0BEB981771D18C001A7184 /* keyboard1.png in Resources */,
+				5C0BEB991771D18C001A7184 /* keyboard1@2x.png in Resources */,
+				5C0BEB9A1771D18C001A7184 /* keyboard2.png in Resources */,
+				5C0BEB9B1771D18C001A7184 /* keyboard2@2x.png in Resources */,
+				5C0BEB9C1771D18C001A7184 /* keyboard3.png in Resources */,
+				5C0BEB9D1771D18C001A7184 /* keyboard3@2x.png in Resources */,
+				5C0BEB9E1771D18C001A7184 /* keyboard4.png in Resources */,
+				5C0BEB9F1771D18C001A7184 /* keyboard4@2x.png in Resources */,
+				5C0BEBA01771D18C001A7184 /* keyboard5.png in Resources */,
+				5C0BEBA11771D18C001A7184 /* keyboard5@2x.png in Resources */,
+				5C0BEBA21771D18C001A7184 /* keyboard6.png in Resources */,
+				5C0BEBA31771D18C001A7184 /* keyboard6@2x.png in Resources */,
+				5C0BEBA41771D18C001A7184 /* keyboard7.png in Resources */,
+				5C0BEBA51771D18C001A7184 /* keyboard7@2x.png in Resources */,
+				5C0BEBA61771D18C001A7184 /* keyboard8.png in Resources */,
+				5C0BEBA71771D18C001A7184 /* keyboard8@2x.png in Resources */,
+				5C0BEBA81771D18C001A7184 /* keyboard9.png in Resources */,
+				5C0BEBA91771D18C001A7184 /* keyboard9@2x.png in Resources */,
+				5C0BEBAC1771D196001A7184 /* keyboard_background_iPad.png in Resources */,
+				5C0BEBAD1771D196001A7184 /* keyboard_background_iPad@2x.png in Resources */,
+				5C0BEBAF1771D290001A7184 /* transparent.png in Resources */,
+				5C0BEBB11771D2E7001A7184 /* red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +355,7 @@
 				5C10A41F176F524B00E10DDD /* ViewController.m in Sources */,
 				5C10A42A176F545A00E10DDD /* FootballVC.m in Sources */,
 				5CFC39B41770691500A9F450 /* NumberView.m in Sources */,
+				5C0BEB721771C575001A7184 /* MachineVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +443,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeutschMath/DeutschMath-Prefix.pch";
 				INFOPLIST_FILE = "DeutschMath/DeutschMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -316,7 +456,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeutschMath/DeutschMath-Prefix.pch";
 				INFOPLIST_FILE = "DeutschMath/DeutschMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

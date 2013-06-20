@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FootballVC.h"
+#import "MachineVC.h"
 
 #define CELL_ID @"cellID"
 
@@ -16,11 +17,19 @@
 @end
 
 @implementation ViewController
+{
+    NSArray* rowArray;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray* tabArr = [NSMutableArray arrayWithCapacity:2];
+    [tabArr addObject:@"Football"];
+    [tabArr addObject:@"Das machine"];
+    rowArray = [NSArray arrayWithArray:tabArr];
+    
     [_tableView reloadData];
 }
 
@@ -35,7 +44,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"number of rows in section");
-    return 1;
+    return rowArray.count;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -49,7 +58,7 @@
     if ( !cell ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_ID];
     }
-    cell.textLabel.text = @"Football";
+    cell.textLabel.text = [rowArray objectAtIndex:indexPath.row];
     
     NSLog(@"made a cell");
     
@@ -64,6 +73,10 @@
         // Open the football game
         FootballVC* fvc = [FootballVC new];
         [self.navigationController pushViewController:fvc animated:YES];
+    }
+    if ( row == 1 ) {
+        MachineVC* mvc = [MachineVC new];
+        [self.navigationController pushViewController:mvc animated:YES];
     }
 }
 
