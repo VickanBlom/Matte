@@ -23,6 +23,13 @@
 #define METER      @"m"
 #define KILOMETER  @"km"
 
+#define COLOR_TEXT       [UIColor colorWithRed:65.0/255.0  green:74.0/255.0 blue:74.0/255.0 alpha:1]
+#define COLOR_CORRECT    [UIColor colorWithRed:.3 green:.7 blue:.3 alpha:1]
+#define COLOR_INCORRECT  [UIColor colorWithRed:.7 green:.3 blue:.7 alpha:1]
+#define NUM_MAX_INCORRECT 2
+
+#define IMAGE_MULT @"multiplikation"
+#define IMAGE_DIV  @"division"
 
 typedef enum {
     ct_time,
@@ -46,6 +53,12 @@ typedef enum {
     int answer;
     
     UIButton* coverButton;
+    UIView* antiInteractor;
+    
+    int numIncorrectAnswers;
+    BOOL isCorrectAnswer;
+    
+    BOOL keyboardIsUnused;
 }
 
 + (id)new {
@@ -71,6 +84,13 @@ typedef enum {
     kf.origin = CGPointMake(0, self.view.frame.size.height);
     _keyboardView.frame = kf;
     [self.view addSubview:_keyboardView];
+    
+    _inputValueLabel.textColor = COLOR_TEXT;
+    _inputUnitLabel.textColor = COLOR_TEXT;
+    _outputUnitLabel.textColor = COLOR_TEXT;
+    _wandleLabel.textColor = COLOR_TEXT;
+    _multiplierLabel.textColor = COLOR_TEXT;
+    
 //    _keyboardView.transform = CGAffineTransformMakeTranslation(0, self.view.frame.size.height);
     
 //    CGRect vf = self.view.frame;
@@ -82,7 +102,14 @@ typedef enum {
 
 -(void) reinitialize {
     
+    if ( antiInteractor ) {
+        [antiInteractor removeFromSuperview];
+        antiInteractor = nil;
+    }
+    
     _outputValueLabel.text = @"";
+    numIncorrectAnswers = 0;
+    isCorrectAnswer = NO;
 
     ct = (CalcType)arc4random_uniform( (u_int32_t)ct_numCT );
     convertUP = arc4random_uniform(2)==0;
@@ -99,17 +126,42 @@ typedef enum {
     _multiplierLabel.text = [NSString stringWithFormat:@"%d",multiplier];
     _inputValueLabel.text = [NSString stringWithFormat:@"%d",(convertUP?bottomValue:topValue)];
     _outputValueLabel.text = @"";
-    _outputValueLabel.textColor = [UIColor blackColor];
+    _outputValueLabel.textColor = COLOR_TEXT;
+    
+    _operatorImage.image = [UIImage imageNamed:( convertUP ? IMAGE_DIV : IMAGE_MULT )];
 }
 
 
 - (IBAction)buttonPressed:(id)sender {
     
     if ( sender == _backButton ) {
+        [self.navigationController popViewControllerAnimated:YES];
         return;
     }
     
     if ( sender == _doneButton ) {
+        
+        antiInteractor = [[UIView alloc] initWithFrame:self.view.frame];
+        antiInteractor.backgroundColor = [UIColor clearColor];
+        [self.view addSubview:antiInteractor];
+        
+        _outputValueLabel.text = [NSString stringWithFormat:@"%d",answer];
+        _outputValueLabel.textColor = COLOR_CORRECT;
+
+        double delayInSeconds = 1;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            
+            [UIView animateWithDuration:.4 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^(void){
+                _outputValueLabel.transform = CGAffineTransformMakeScale(1.1, 1.1);
+            } completion:^(BOOL comp){
+                [UIView animateWithDuration:.4 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^(void){
+                    _outputValueLabel.transform = CGAffineTransformIdentity;
+                } completion:^(BOOL comp){[self reinitialize];}];
+            }];
+            
+        });
+        
         return;
     }
     
@@ -122,6 +174,7 @@ typedef enum {
     }
     
     if ( sender == _valueButton ) {
+        keyboardIsUnused = YES;
         [self addCoverButton];
         [UIView animateWithDuration:.3 animations:^(void){
             _tranView.transform = CGAffineTransformMakeTranslation(0, -_keyboardView.frame.size.height);
@@ -138,6 +191,7 @@ typedef enum {
         if ( currText && currText.length>0 ) {
             currText = [currText substringToIndex:currText.length-1];
             _outputValueLabel.text = currText;
+            keyboardIsUnused = NO;
         }
         return;
     }
@@ -154,8 +208,9 @@ typedef enum {
     // otherwise we have a number button
     UIButton* butt = (UIButton*)sender;
     int tag = butt.tag;
-    currText = [currText stringByAppendingFormat:@"%d",tag];
+    currText = ( keyboardIsUnused ? [NSString stringWithFormat:@"%d",tag] : [currText stringByAppendingFormat:@"%d",tag] );
     _outputValueLabel.text = currText;
+    keyboardIsUnused = NO;
 }
 
 -(void)addCoverButton {
@@ -200,10 +255,15 @@ typedef enum {
     }
     
     if ( [answerStr isEqualToString:[NSString stringWithFormat:@"%d",answer]] ) {
-        _outputValueLabel.textColor = [UIColor colorWithRed:.3 green:.7 blue:.3 alpha:1];
+        _outputValueLabel.textColor = COLOR_CORRECT;
+        isCorrectAnswer = YES;
     }
     else {
-        _outputValueLabel.textColor = [UIColor colorWithRed:.7 green:.3 blue:.7 alpha:1];
+        _outputValueLabel.textColor = COLOR_INCORRECT;
+        numIncorrectAnswers += 1;
+        if ( numIncorrectAnswers > NUM_MAX_INCORRECT ) {
+            [self buttonPressed:_doneButton];
+        }
     }
 }
 

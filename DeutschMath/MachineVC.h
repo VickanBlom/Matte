@@ -20,6 +20,7 @@
 
 - (IBAction)buttonPressed:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *wandleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *inputValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *inputUnitLabel;
 @property (weak, nonatomic) IBOutlet UILabel *outputUnitLabel;
